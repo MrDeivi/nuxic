@@ -1,0 +1,66 @@
+import type { Genre } from '~/types'
+
+export default defineEventHandler((event) => {
+  return [
+    {
+      id: '132',
+      name: 'Pop',
+      picture: 'https://api.deezer.com/genre/132/image',
+      picture_small: 'https://e-cdns-images.dzcdn.net/images/misc/db7a604d9e7634a67d45cfc86b48370a/56x56-000000-80-0-0.jpg',
+      picture_medium: 'https://e-cdns-images.dzcdn.net/images/misc/db7a604d9e7634a67d45cfc86b48370a/250x250-000000-80-0-0.jpg',
+      picture_big: 'https://e-cdns-images.dzcdn.net/images/misc/db7a604d9e7634a67d45cfc86b48370a/500x500-000000-80-0-0.jpg',
+      picture_xl: 'https://e-cdns-images.dzcdn.net/images/misc/db7a604d9e7634a67d45cfc86b48370a/1000x1000-000000-80-0-0.jpg',
+      type: 'genre',
+    },
+    {
+      id: '116',
+      name: 'Rap/Hip Hop',
+      picture: 'https://api.deezer.com/genre/116/image',
+      picture_small: 'https://e-cdns-images.dzcdn.net/images/misc/5c27115d3b797954afff59199dad98d1/56x56-000000-80-0-0.jpg',
+      picture_medium: 'https://e-cdns-images.dzcdn.net/images/misc/5c27115d3b797954afff59199dad98d1/250x250-000000-80-0-0.jpg',
+      picture_big: 'https://e-cdns-images.dzcdn.net/images/misc/5c27115d3b797954afff59199dad98d1/500x500-000000-80-0-0.jpg',
+      picture_xl: 'https://e-cdns-images.dzcdn.net/images/misc/5c27115d3b797954afff59199dad98d1/1000x1000-000000-80-0-0.jpg',
+      type: 'genre',
+    },
+    {
+      id: '122',
+      name: 'Reggaeton',
+      picture: 'https://api.deezer.com/genre/122/image',
+      picture_small: 'https://e-cdns-images.dzcdn.net/images/misc/44dfebf3cf943dd82759d9bd9063767a/56x56-000000-80-0-0.jpg',
+      picture_medium: 'https://e-cdns-images.dzcdn.net/images/misc/44dfebf3cf943dd82759d9bd9063767a/250x250-000000-80-0-0.jpg',
+      picture_big: 'https://e-cdns-images.dzcdn.net/images/misc/44dfebf3cf943dd82759d9bd9063767a/500x500-000000-80-0-0.jpg',
+      picture_xl: 'https://e-cdns-images.dzcdn.net/images/misc/44dfebf3cf943dd82759d9bd9063767a/1000x1000-000000-80-0-0.jpg',
+      type: 'genre',
+    },
+    {
+      id: '113',
+      name: 'Dance',
+      picture: 'https://api.deezer.com/genre/113/image',
+      picture_small: 'https://e-cdns-images.dzcdn.net/images/misc/bd5fdfa1a23e02e2697818e09e008e69/56x56-000000-80-0-0.jpg',
+      picture_medium: 'https://e-cdns-images.dzcdn.net/images/misc/bd5fdfa1a23e02e2697818e09e008e69/250x250-000000-80-0-0.jpg',
+      picture_big: 'https://e-cdns-images.dzcdn.net/images/misc/bd5fdfa1a23e02e2697818e09e008e69/500x500-000000-80-0-0.jpg',
+      picture_xl: 'https://e-cdns-images.dzcdn.net/images/misc/bd5fdfa1a23e02e2697818e09e008e69/1000x1000-000000-80-0-0.jpg',
+      type: 'genre',
+    },
+    {
+      id: '106',
+      name: 'Electro',
+      picture: 'https://api.deezer.com/genre/106/image',
+      picture_small: 'https://e-cdns-images.dzcdn.net/images/misc/15df4502c1c58137dae5bdd1cc6f0251/56x56-000000-80-0-0.jpg',
+      picture_medium: 'https://e-cdns-images.dzcdn.net/images/misc/15df4502c1c58137dae5bdd1cc6f0251/250x250-000000-80-0-0.jpg',
+      picture_big: 'https://e-cdns-images.dzcdn.net/images/misc/15df4502c1c58137dae5bdd1cc6f0251/500x500-000000-80-0-0.jpg',
+      picture_xl: 'https://e-cdns-images.dzcdn.net/images/misc/15df4502c1c58137dae5bdd1cc6f0251/1000x1000-000000-80-0-0.jpg',
+      type: 'genre',
+    },
+    {
+      id: '197',
+      name: 'Latino',
+      picture: 'https://api.deezer.com/genre/197/image',
+      picture_small: 'https://e-cdns-images.dzcdn.net/images/misc/069c9888538799748960781f098b5f4b/56x56-000000-80-0-0.jpg',
+      picture_medium: 'https://e-cdns-images.dzcdn.net/images/misc/069c9888538799748960781f098b5f4b/250x250-000000-80-0-0.jpg',
+      picture_big: 'https://e-cdns-images.dzcdn.net/images/misc/069c9888538799748960781f098b5f4b/500x500-000000-80-0-0.jpg',
+      picture_xl: 'https://e-cdns-images.dzcdn.net/images/misc/069c9888538799748960781f098b5f4b/1000x1000-000000-80-0-0.jpg',
+      type: 'genre',
+    },
+  ] as any as Genre[]
+})
