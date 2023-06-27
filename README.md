@@ -14,7 +14,7 @@
  
  
  
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Quicksand&duration=3000&pause=1000&color=65F7F1&width=435&lines=Explore+artists,+albums+and+tracks;Put+your+headphones🎧+and+and+enjoy+🎶) 
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Quicksand&duration=3000&pause=1000&color=65F7F1&width=435&lines=Explore+artists,+albums+and+tracks;Put+your+headphones🎧+and+enjoy+🎶) 
 
 🎶 <a href="https://developers.deezer.com/api" style="color: #65F7F1">
 https://nuxic.deivi.me

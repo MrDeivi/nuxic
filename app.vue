@@ -13,8 +13,7 @@ useHead({
   titleTemplate: title => title !== 'Nuxic' ? `${title} · Nuxic` : title,
   meta: [
     { name: 'description', content: 'A music app built with Nuxt 3 and Deezer API.' },
-    // { property: 'og:image', content: 'https://nuxic.deivi.me/img/og_img.png' },
-    { property: 'og:image', content: img('/img/og_img.png', { width: 1200, height: 630 }) },
+    { property: 'og:image', content: 'https://nuxic.deivi.me/img/og_img.png' },
     { property: 'og:type', content: 'website' },
     { property: 'twitter:card', content: 'summary_large_image' },
     { property: 'twitter:domain', content: 'nuxic.deivi.me' },
