@@ -1,6 +1,21 @@
 {
-  "private": true,
+  "private": false,
+  "description": "A music app built with Nuxt 3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrDeivi/nuxic"
+  },
+  "keywords": [
+    "Nuxt 3",
+    "Music",
+    "UnoCSS"
+  ],
+  "author": "David Alfonso <email@deivi.me>",
+  "bugs": {
+    "url": "https://github.com/MrDeivi/nuxic/issues"
+  },
   "packageManager": "pnpm@8.6.1",
+
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev --port=3006",
