@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { Genre } from '~/types'
 
-const { data } = await useFetch<{ data: Genre[] }>('https://api.nuxic.deivi.me/deezer/genre?limit=50')
+const {apiBaseUrl} = useAppConfig()
+const { data } = await useFetch<{ data: Genre[] }>(`${apiBaseUrl}/deezer/genre?limit=50`)
 
 useSeoMeta({
   title: 'Explore genres',
