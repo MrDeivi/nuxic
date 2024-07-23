@@ -6,3 +6,8 @@ export function getImageSrc(md5Image: string, size: 'small' | 'medium' | 'big' =
   }
   return `https://e-cdns-images.dzcdn.net/images/cover/${md5Image}/${dimensions[size]}-000000-80-0-0.jpg`
 }
+
+export function delay(ms: number) {
+	return new Promise((resolve) => setTimeout(resolve, ms))
+  }
+  

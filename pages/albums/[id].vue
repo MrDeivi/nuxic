@@ -13,13 +13,18 @@ if (!data.value || (data.value as any).error)
 
 const durationText = useDurationText(data.value?.duration ? Number(data.value?.duration) : 0)
 
-const { data: albumTracks, fetchMore, loading } = await usePaginatedFetch<Track>(
+const { data: albumTracks, fetchMore, loading, isLastPage } = await usePaginatedFetch<Track>(
     `${DEEZER().album(id.value)}/tracks`,
     { limit: 10 },
 )
 const musicStore = useMusicStore()
 
-useInfiniteGrid(loading, fetchMore)
+watch(albumTracks, () => musicStore.setCurrentPlaylist(albumTracks.value))
+useInfiniteGrid(loading, fetchMore, isLastPage)
+
+function playSong() {
+	albumTracks?.value.length && musicStore.setCurrentPlaylist(albumTracks.value)
+}
 
 useSeoMeta({
   title: data.value.title,
@@ -137,7 +142,7 @@ Explore albums from hundreds of artists in nuxic.`,
           data-aos="fade-left"
           :data-aos-delay="100 * j"
           :data-aos-offset="-300"
-          @play="albumTracks?.length && musicStore.setCurrentPlaylist(albumTracks)"
+          @play="playSong"
         />
       </MusicContainer>
 
